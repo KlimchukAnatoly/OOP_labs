@@ -30,6 +30,7 @@ public:
 	//перегрузки операторов ввода и вывода
 	friend ostream& operator<<(ostream& S, Signal& obj);
 	friend istream& operator>>(istream& S, Signal& obj);
-	//перегрузка оператора сравнения (ДЛЯ СОРТИРОВКИ)
+	int operator[](int a);
+	void operator()();
 };
 

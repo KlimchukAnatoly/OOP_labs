@@ -6,6 +6,9 @@ using namespace std;
 
 class Train
 {
+	string place;
+	string number;
+	string time;
 public:
 	string  Getnumber() { return number; }
 	string  Getplace() { return place; }
@@ -13,9 +16,5 @@ public:
 
 	Train();
 	Train operator = (const Train& obj);
-private:
-	string place;
-	string number;
-	string time;
 };
 

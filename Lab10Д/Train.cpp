@@ -1,6 +1,6 @@
 #include "Train.h"
+
 Train::Train() {
-	srand(rand());
 	string cities[3] = { "Киев","Харьков","Одесса" };
 	place = cities[rand()%3];
 	number = (char)(rand() % 10 + 48);

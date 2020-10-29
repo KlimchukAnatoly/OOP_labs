@@ -1,39 +1,68 @@
 #include "data.h"
 
-//bool stringcompare(string a, string b) {
-//	int i = 0;
-//	for (int i = 0; (i < sizeof(a)) && (i < sizeof(b)); i++)
-//	{
-//		if (i == sizeof(a)) {
-//			if (i == sizeof(b))return 0;
-//			else return 1;
-//		}
-//		else if (a[i] < b[i])return 1;
-//		else if (a[i] > b[i]) return 0;
-//	}
-//}
-
-void sortbynum(Train* list) {
-	string word = "~";
+void sortByNum(Train* list) {
+	string* names = new string[N];
+	string word;
 	Train temp;
-	for (int i = 0, n = i; i < N - 1; i++, n = i) {
+	int n = 0;
+	for (int i = 0; i < N; i++)
+	{
+		names[i] = list[i].Getnumber();
+	}
+
+	for (int i = 0; i < N - 1; i++) {
+		int n = i;
+		word = CHAR_MAX;
 		for (int j = i; j < N; j++) {
-			if (list[j].Getnumber() < word) {
-				word = list[j].Getnumber();
+			if (names[j] < word) {
+				n = j;
+				word = names[j];
 			}
 		}
-		if (3 != i) {
+		if (n != i) {
+			word = names[i];
+			names[i] = names[n];
+			names[n] = word;
 			temp = list[i];
 			list[i] = list[n];
 			list[n] = temp;
 		}
-		for (int k = 0; k < N; k++)
-		{
-			cout << list[k].Getnumber() << ' ';
+	}
+}
+
+void sortByPlace(Train* list)
+{
+	string* places = new string[N];
+	string word;
+	Train temp;
+	int n = 0;
+	for (int i = 0; i < N; i++)
+	{
+		places[i] = list[i].Getplace();
+	}
+	for (int i = 0; i < N - 1; i++) {
+		int n = i;
+		word = CHAR_MAX;
+		for (int j = i; j < N; j++) {
+			if (places[j] < word) {
+				n = j;
+				word = places[j];
+			}
 		}
-		cout << endl;
+		if (n != i) {
+			word = places[i];
+			places[i] = places[n];
+			places[n] = word;
+			temp = list[i];
+			list[i] = list[n];
+			list[n] = temp;
+		}
 	}
 
+}
+
+void sortByTimeInRange(Train* list, int start, int end)
+{
 }
 
 void const showtrains(Train* list) {
@@ -42,5 +71,4 @@ void const showtrains(Train* list) {
 	{
 		cout << list[i].Getnumber() << '\t' << list[i].Getplace() << '\t' << list[i].Gettime() << '\n';
 	}
-	system("pause");
 }

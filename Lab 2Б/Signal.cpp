@@ -24,3 +24,13 @@ Signal Signal::operator = (const Signal& obj)
 	freq = obj.freq;
 	return *this;
 }
+
+int Signal::operator[](int i)
+{
+	return this->name.length();
+}
+
+void Signal::operator()()
+{
+	cin>>year>>name>>height>>freq;
+}
