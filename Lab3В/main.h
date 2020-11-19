@@ -2,4 +2,4 @@
 #include "Classes.h"
 #include <time.h>
 
-#define N 10
+#define N 50

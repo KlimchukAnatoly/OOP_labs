@@ -7,7 +7,10 @@ int main() {
 	cout << "генерация элементов\n";
 	showtrains(list);
 	cout << "сортировка по номеру:\n";
-	sortByPlace(list);
+	sortByNum(list);
 	showtrains(list);
 	cout << "сортировка по месту назначения, одинаковые позиции сорт. по времени.\n";
+	sortByPlace(list);
+	showtrains(list);
+	searshbynum(list);
 }

@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Amatoly\Desktop\Prog\2_КУРС\Module03.11\main.cpp(84,19): warning C4584: 'C': base-class 'B1' is already a base-class of 'A'
+C:\Users\Amatoly\Desktop\Prog\2_КУРС\Module03.11\main.cpp(10): message : see declaration of 'B1'
+C:\Users\Amatoly\Desktop\Prog\2_КУРС\Module03.11\main.cpp(57): message : see declaration of 'A'
+  Module03.11.vcxproj -> C:\Users\Amatoly\Desktop\Prog\2_КУРС\Module03.11\Debug\Module03.11.exe

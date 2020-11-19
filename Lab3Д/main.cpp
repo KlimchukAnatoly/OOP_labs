@@ -7,4 +7,5 @@ int main() {
 	KhPI.printall();
 	KhPI.printPrepodsUnder50();
 	KhPI.printDolzhniki();
+	system("pause");
 }

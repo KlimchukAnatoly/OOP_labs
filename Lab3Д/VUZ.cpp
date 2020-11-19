@@ -5,11 +5,11 @@ VUZ::VUZ()
 	Shtat = new  Persona* [K];
 	for (size_t i = 0; i < 2; i++)
 	{
-		Shtat[i] = new Prepod;	
-	}	
+		Shtat[i] = new Prepod;
+	}
 	for (size_t i = 2; i < K-1; i++)
 	{
-		Shtat[i] = new Student;	
+		Shtat[i] = new Student;
 	}
 	Shtat[K-1] = new Zav_Kaf;
 }

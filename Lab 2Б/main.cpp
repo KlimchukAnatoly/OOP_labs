@@ -14,7 +14,7 @@ int main() {
 	for (int i = 0; i < N; i++) {
 		cout<< i+1 << " " << sig[i];
 	}
-	cout << "Длина 3 имени: "<<sig[2][1];
+	cout << "Длина 3 имени: " << sig[2][1] << endl;
 	cout << "Инициализация 3 записи:"<<endl;
 	sig[2]();
 	cout << "Вывод:"<<endl;

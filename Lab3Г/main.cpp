@@ -3,7 +3,7 @@
 
 int main() {
 	setlocale(LC_ALL, "ru");
-	cout << "Создание обьекты производных класов" << endl;
+	cout << "Создание обьектов производных класов" << endl;
 	P1 triangle;
 	P2 rectangle;
 	P3 circle;
