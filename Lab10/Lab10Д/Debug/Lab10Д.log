@@ -1,0 +1,6 @@
+﻿  data.cpp
+  main.cpp
+C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab10Д\main.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Train.cpp
+  Generating Code...
+  Lab10Д.vcxproj -> C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab10Д\Debug\Lab10Д.exe

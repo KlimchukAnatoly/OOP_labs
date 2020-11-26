@@ -1,0 +1,5 @@
+﻿  VUZ.cpp
+  main.cpp
+C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab3Д\main.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Lab3Д.vcxproj -> C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab3Д\Debug\Lab3Д.exe

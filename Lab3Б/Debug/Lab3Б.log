@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab3Б\main.cpp(6,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Lab3Б.vcxproj -> C:\Users\Amatoly\Desktop\Prog\2_КУРС\Lab3Б\Debug\Lab3Б.exe
