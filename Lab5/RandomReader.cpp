@@ -2,14 +2,13 @@
 
 RandomReader::RandomReader()
 {
-	s = new string;
-	*s = "NaN";
+	str = new string;
+	*str = "NaN";
 }
 
-void RandomReader::operator [](unsigned int& _num)
+unsigned int& RandomReader:: operator [](unsigned int& _num)
 {
 	char* c = new char;
-	string* str = new string;
 	*str = "";
 	ifstream fin(FILEPATH);
 	for (unsigned int i = 0; i < _num; i++)
@@ -24,13 +23,12 @@ void RandomReader::operator [](unsigned int& _num)
 		fin.seekg(0);
 	}
 	fin.close();
-	delete this->s;
-	this->s = str;
-	str = nullptr;
-	cout << s << '/n' << str << endl;
+	cout << *str;
+	return _num;
 }
 
-std::ostream& operator<< (std::ostream& out, const RandomReader& point) {
-	out << point.s;
+std::ostream& operator<<(std::ostream& out, const RandomReader& r)
+{
+	cout << *(r.str) << endl;
 	return out;
 }

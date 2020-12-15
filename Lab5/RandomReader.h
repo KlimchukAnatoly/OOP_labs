@@ -2,9 +2,9 @@
 #include "data.h"
 class RandomReader
 {
-	string* s;
+	string* str;
 public:
 	RandomReader();
-	void operator [] (unsigned int& _num);
-	friend std::ostream& operator<< (std::ostream& out, const RandomReader& point);
+	unsigned int& operator [] (unsigned int& _num);
+	friend std::ostream& operator<< (std::ostream& out, const RandomReader& r);
 };

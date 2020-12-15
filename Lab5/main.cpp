@@ -5,6 +5,6 @@ int main() {
 	setlocale(LC_ALL, "ru");
 	srand(time(NULL));
 	RandomReader* r = new RandomReader;
-	r[2];
-	cout << r;
+	r[5];
+	cout << *r;
 }
